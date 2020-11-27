@@ -11,7 +11,7 @@ const hardRejection = require('hard-rejection');
 const normalizePackageData = require('normalize-package-data');
 
 // Prevent caching of this module so module.parent is always accurate
-delete require.cache[__filename];
+// delete require.cache[__filename];
 const parentDir = path.dirname(module.parent && module.parent.filename ? module.parent.filename : '.');
 
 const isFlagMissing = (flagName, definedFlags, receivedFlags, input) => {
